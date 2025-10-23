@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <title>Formulaire</title>
+        <meta charset ="utf-8">
+       </head>
+       <body>
+      <form name="Formulaire Contact" method="post" action="#">
+        <fieldset>
+            <legend><h2>Formulaire Contact</h2></legend>
+        <label for="Nom" >
+        Nom<br>
+        <input type="texte" name="Nom" id="Nom" placeholder="Entrez votre nom" required><br>
+        </label>
+       <label for="emai" >Email<br>
+        <input type="email" name="email" id="emai" placeholder="Entrez votre email" required><br>
+       </label>
+      <label for="sujet"> Sujet<br>
+        <input type="text" name="Sujet" id="sujet" placeholder="Entrez le sujet" maxlength="60"><br>
+      </label>
+        <label for ="message">Message<br>
+        <input type="text" name="Message" aria-setsize="50" id="message" placeholder="Entrez un message"required><br>
+        </label>
+        <input type="submit"  value="Envoyer">
+        
+        </fieldset>
+      </form>
+    </body>
+  </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+       <head>
+        <title>Mise en page sémantique</title>
+        <meta charset ="utf-8">
+        <style>
+          /* centre l'image dans le header */
+          header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 1000px;
+            height: auto;
+          }
+          nav {
+            display: flex;
+            justify-content: center; /* centre horizontalement */
+          }
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.25rem; /* espacement entre items */
+            align-items: center;
+          }
+          nav a {
+            text-decoration: none;
+            color: blueviolet;
+            padding: 0.25rem 0.5rem;
+          }
+        </style>
+       </head>
+       <body>
+        <header>
+            <h1 style="text-align: center;" >Restaurant Marrakech</h1>
+            <img src="ChatGPT Image Jun 18, 2025, 03_50_58 PM.png" alt="Burger logo" title="Logo-Restaurant Marrakech" >
+        </header>
+        <nav>
+            <ul>
+                <li ><a href="#">Acceuil</a></li>
+                <li><a href="#">articles</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <arcticle>
+                <h2>Bienvenue au Restaurant Marrakech </h2>
+                <time datetime="2025-10-21">21 octobre 2025</time>
+                <p>Découvrez les saveurs authentiques du Maroc dans une ambiance chaleureuse et conviviale. Notre menu propose une variété de plats traditionnels et modernes préparés avec des ingrédients frais et de qualité. Que vous soyez amateur de tajines, couscous , pâtisseries marocaines ou de Fast food, notre équipe vous accueillera avec plaisir.</p>
+               <p><a href="#" title="Lire plus">Lire plus</a></p>
+            </article>
+               <article>
+                <h2>Menu spécial de ce Mois:</h2>
+                <time datetime="2025-10-21">21 octobre 2025</time>
+                <p>Cette saison, nous mettons en avant les plats phares de la cuisine marocaine, préparés avec des ingrédients frais et un savoir‑faire traditionnel.</p>
+                <p>De plus, nous proposons une sélection de fast food pour satisfaire toutes les envies.</p>
+               <p><a href="#" title="Lire plus">Lire plus</a></p>
+                <h3>Plats Traditionnels :</h3>
+                <ul>
+                    <li>Tajine d'agneau aux pruneaux</li>
+                    <li>Couscous royal</li>
+                    <li>Pastilla au poulet</li>
+                    <li>Pâtisseries orientales et thé à la menthe</li>
+                </ul>
+                <h3>Fast Food:</h3>
+                <ul>
+                    <li>Hawaiin Burger</li>
+                    <li>Tacos mixte</li>
+                    <li>Calzone</li>
+                </ul>
+                <p id="contact">Réservation et contact : <a href="mailto:contact@restaurantmarrakech.com">contact@restaurantmarrakech.com</a></p>
+            </arcticle>
+        </main>
+        <aside>
+            <h4>À propos</h4>
+            <p>Restaurant Marrakech — cuisine marocaine authentique, service convivial et ingrédients frais. Ouvert tous les jours, réservation recommandée . Nous sommes impatients de vous accueillir dans notre  diffèrents sites à Marrakech :Gueliz, Hivernage, Medina.</p>
+        </aside>
+        <footer>
+            <p>
+                © <span class="year"><?php echo date('Y'); ?></span> Restaurant Marrakech — Mentions légales : SARL Restaurant Marrakech, SIRET 00000000000000. Tous droits réservés.
+            </p>
+        </footer>
+       </body>
+       </html>
